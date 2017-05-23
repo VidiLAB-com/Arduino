@@ -2,18 +2,20 @@
 
 Jednostavan Arduino Leonardo projekt. Omogućit će korištenje starog PC joysticka s Gameport DB15 interfaceom.
 
-Using modified Arduino USB HID core from. Link contain files for old Arduino IDE, repo contain new version with slightly modify logging. Replace files from Arduino folder Arduino\hardware\arduino\cores\arduino\ with new version from Arduino_USB_HID_Core (USBAPI.h HID.cpp).
+Arduino IDE koji vam treba je verzije 1.6.5 te ga skinite sa službenih stranica na adresi https://www.arduino.cc/en/Main/OldSoftwareReleases#previous
+Nakon instalacije trebate zamijeniti dvije datoteke (USBAPI.h HID.cpp) koje možete preuzeti ovdje te ih prekopirati preko postojećih u folder gdje ste instalirali Arduino IDE 1.6.5, a to je najčešće C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino
 
-Build Arduino shield or using breadboard with schematic from Schematic folder.
 
-If you are using analog joystick open sketch from Analog_Joystick or get Digital_Joystick for gamepad.
+U Schematic folderu nalazi se shema za spajanje uz pomoć breadboard ili možete izraditi Arduino shield.
 
-All schematic create with fritzing. Slightly mess with ortogonal lines ;(.
+Ukoliko koristite analogni joystick otvorite skicu iz Analog_Joystick ili iz Digital_Joystick za gamepad.
 
-P.S. Analog joystick may be need slightly tuning with constants.
+Sve sheme napravljene su uz pomoć fritzinga.
+
+P.S. Analogni joystick možete podesiti obim konstantama.
 
 const int AXIS_MIN = 550;
 const int AXIS_MAX = 1023;
 const int AXIS_NUL = 720; 
 
-All debug information route to Arduino COM port.
+Sve debug informacije idu na Arduino COM port.
