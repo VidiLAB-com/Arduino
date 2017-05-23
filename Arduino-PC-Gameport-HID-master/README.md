@@ -1,8 +1,8 @@
 ### Arduino Gameport to USB HID
 
-Simple Arduino Leonardo project. Allow using old PC joystick with Gameport DB15 interface.
+Jednostavan Arduino Leonardo projekt. Omogućit će korištenje starog PC joysticka s Gameport DB15 interfaceom.
 
-Using modified Arduino USB HID core from [CONNOR Blog](http://www.imaginaryindustries.com/blog/?p=80). Link contain files for old Arduino IDE, repo contain new version with slightly modify logging. Replace files from Arduino folder Arduino\hardware\arduino\cores\arduino\ with new version from Arduino_USB_HID_Core (USBAPI.h HID.cpp).
+Using modified Arduino USB HID core from. Link contain files for old Arduino IDE, repo contain new version with slightly modify logging. Replace files from Arduino folder Arduino\hardware\arduino\cores\arduino\ with new version from Arduino_USB_HID_Core (USBAPI.h HID.cpp).
 
 Build Arduino shield or using breadboard with schematic from Schematic folder.
 
