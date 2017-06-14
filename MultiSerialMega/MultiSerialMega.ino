@@ -1,14 +1,14 @@
 /*
-  Mega multple serial test
+ Arduino Mega i Leonardo serial test
 
- Receives from the main serial port, sends to the others.
- Receives from serial port 1, sends to the main serial (Serial 0).
+ Prima s glavnog seriskog porta, te šalje na druge (poput Blutooth modula).
+ Prima s seriskog porta (Serial1), te šalje na primarni (Serial 0).
 
- This example works only on the Arduino Mega
+ Ovaj kod radi s Arduino Mega i Leonardo 
 
- The circuit:
- * Any serial device attached to Serial port 1
- * Serial monitor open on Serial port 0:
+ Shema:
+ * Bluetooth modul HC-05 ili HC-06 te druge serijske uređaje spojiti s digitlnim pinovima (Serial port 1) 0 i 1 (Tx i Rx)
+ * Serial monitor prikazuje podatke poslane na Serial port 0 (Arduino USB konekcija):
 
  created 30 Dec. 2008
  modified 20 May 2012
