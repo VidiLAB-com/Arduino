@@ -68,7 +68,7 @@ if (Serial.available()>0) {serialA =Serial.read(); Serial.println(serialA);}
     break;
   }
     int StanjeFIRE = digitalRead(FIRE);
-    Serial.println(",Pozer = " + String(StanjeFIRE) + ",");
+    Serial.println(",Pozar = " + String(StanjeFIRE) + ",");
     delay(10);
 
     int StanjeREED = digitalRead(REED);
