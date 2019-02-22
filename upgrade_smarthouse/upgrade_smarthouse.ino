@@ -68,11 +68,11 @@ if (Serial.available()>0) {serialA =Serial.read(); Serial.println(serialA);}
     break;
   }
     int StanjeFIRE = digitalRead(FIRE);
-    Serial.println(",Vrata = " + String(StanjeFIRE) + ",");
+    Serial.println(",Pozer = " + String(StanjeFIRE) + ",");
     delay(10);
 
     int StanjeREED = digitalRead(REED);
-    Serial.println("Svjetlo = " + String(StanjeREED) + ",");
+    Serial.println("Vrata = " + String(StanjeREED) + ",");
     delay(10);
 
     tlakZraka = ocitajTlak();
