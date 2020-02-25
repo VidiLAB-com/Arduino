@@ -31,7 +31,7 @@ void loop() {
 	Q = Sr_vr - calibr;    //Korekcija za preciznost
                                                              
 	Serial.print(Q);            
-	Serial.println(“ PPM”);
+	Serial.println(" PPM");
                                                                                         
 	if(Q>750){             //Paljenje alarma ako razina prijeđe dopustenu
 		digitalWrite(LED,HIGH); 
